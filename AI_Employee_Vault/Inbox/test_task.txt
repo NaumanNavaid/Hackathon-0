@@ -1,0 +1,6 @@
+This is a test task for the AI Employee.
+
+Please process this:
+- Review the content
+- Create a plan
+- Log the action

@@ -1,0 +1,20 @@
+# Personal AI Employee - Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# File system monitoring
+watchdog>=5.0.0
+
+# Logging (optional, for prettier logs)
+colorlog>=6.8.0
+
+# Gmail API (for Silver tier - Bronze only uses filesystem)
+# google-api-python-client>=2.100.0
+# google-auth-oauthlib>=1.0.0
+# google-auth-httplib2>=0.1.0
+
+# Playwright (for Silver tier - WhatsApp watching)
+# playwright>=1.40.0
+
+# Utilities
+python-dateutil>=2.8.2
+pytz>=2023.3
