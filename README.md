@@ -8,12 +8,12 @@ Your life and business on autopilot. Local-first, agent-driven, human-in-the-loo
 
 ## Tiers
 
-| Tier | Status | Link |
-|------|--------|------|
-| **Bronze** | ✅ Complete | [`bronze-tier/README.md`](bronze-tier/README.md) |
-| **Silver** | 🚧 Planned | - |
-| **Gold** | 📋 Planned | - |
-| **Platinum** | 📋 Planned | - |
+| Tier | Status | Time | Link |
+|------|--------|------|------|
+| **Bronze** | ✅ Complete | 8-12 hrs | [`bronze-tier/README.md`](bronze-tier/README.md) |
+| **Silver** | 🚧 Planned | 20-30 hrs | [`silver-tier/README.md`](silver-tier/README.md) |
+| **Gold** | 📋 Planned | 40+ hrs | [`gold-tier/README.md`](gold-tier/README.md) |
+| **Platinum** | 📋 Planned | 60+ hrs | [`platinum-tier/README.md`](platinum-tier/README.md) |
 
 ---
 
@@ -33,11 +33,17 @@ python filesystem_watcher.py
 
 ```
 Hackathon-0/
-├── bronze-tier/          # Bronze Tier Implementation
+├── bronze-tier/          # ✅ Bronze - Foundation
 │   ├── AI_Employee_Vault/
 │   ├── watchers/
 │   ├── skills/
-│   └── README.md         # Bronze Tier docs
+│   └── README.md
+├── silver-tier/          # 🚧 Silver - Functional Assistant
+│   └── README.md
+├── gold-tier/            # 📋 Gold - Autonomous Employee
+│   └── README.md
+├── platinum-tier/        # 📋 Platinum - Always-On Cloud
+│   └── README.md
 ├── history/              # Prompt History Records
 ├── .specify/             # SpecKit Plus templates
 └── README.md             # This file
