@@ -27,32 +27,35 @@ This is a **Bronze Tier** implementation of a Personal AI Employee - an autonomo
 
 ```
 Hackathon-0/
-├── AI_Employee_Vault/          # Obsidian vault (memory/dashboard)
-│   ├── Inbox/                  # Drop folder for new items
-│   ├── Needs_Action/           # Items requiring processing
-│   ├── Done/                   # Completed items
-│   ├── Plans/                  # Execution plans
-│   ├── Logs/                   # Activity logs
-│   ├── Pending_Approval/       # Awaiting human approval
-│   ├── Approved/               # Approved actions
-│   ├── Rejected/               # Rejected actions
-│   ├── Accounting/             # Financial records
-│   ├── Dashboard.md            # Main dashboard
-│   └── Company_Handbook.md     # Rules of engagement
+├── bronze-tier/                # Bronze Tier Implementation
+│   ├── AI_Employee_Vault/      # Obsidian vault (memory/dashboard)
+│   │   ├── Inbox/              # Drop folder for new items
+│   │   ├── Needs_Action/       # Items requiring processing
+│   │   ├── Done/               # Completed items
+│   │   ├── Plans/              # Execution plans
+│   │   ├── Logs/               # Activity logs
+│   │   ├── Pending_Approval/   # Awaiting human approval
+│   │   ├── Approved/           # Approved actions
+│   │   ├── Rejected/           # Rejected actions
+│   │   ├── Accounting/         # Financial records
+│   │   ├── Dashboard.md        # Main dashboard
+│   │   └── Company_Handbook.md # Rules of engagement
+│   │
+│   ├── watchers/               # Python watcher scripts
+│   │   ├── base_watcher.py     # Abstract base class
+│   │   ├── filesystem_watcher.py # File system monitoring
+│   │   └── requirements.txt    # Python dependencies
+│   │
+│   └── skills/                 # Agent Skills for Claude Code
+│       ├── process-needs-action.md # Process pending items
+│       ├── update-dashboard.md     # Update dashboard stats
+│       ├── request-approval.md     # Create approval requests
+│       ├── create-plan.md          # Create execution plans
+│       ├── weekly-briefing.md      # Generate CEO briefings
+│       └── log-action.md           # Log actions
 │
-├── watchers/                   # Python watcher scripts
-│   ├── base_watcher.py         # Abstract base class
-│   ├── filesystem_watcher.py   # File system monitoring
-│   └── requirements.txt        # Python dependencies
-│
-├── skills/                     # Agent Skills for Claude Code
-│   ├── process-needs-action.md # Process pending items
-│   ├── update-dashboard.md     # Update dashboard stats
-│   ├── request-approval.md     # Create approval requests
-│   ├── create-plan.md          # Create execution plans
-│   ├── weekly-briefing.md      # Generate CEO briefings
-│   └── log-action.md           # Log actions
-│
+├── history/                    # Prompt History Records
+├── .specify/                   # SpecKit Plus templates
 └── README.md                   # This file
 ```
 
@@ -70,7 +73,7 @@ Hackathon-0/
 ### 2. Install Python Dependencies
 
 ```bash
-cd watchers
+cd bronze-tier/watchers
 pip install -r requirements.txt
 ```
 
@@ -78,13 +81,13 @@ pip install -r requirements.txt
 
 1. Open Obsidian
 2. Click "Open folder as vault"
-3. Select: `AI_Employee_Vault`
+3. Select: `bronze-tier/AI_Employee_Vault`
 4. Open `Dashboard.md` to see the main dashboard
 
 ### 4. Start the File System Watcher
 
 ```bash
-cd watchers
+cd bronze-tier/watchers
 python filesystem_watcher.py
 ```
 
@@ -92,7 +95,7 @@ The watcher will monitor the `/Inbox` folder and create action files for new ite
 
 ### 5. Configure Claude Code Skills
 
-Copy the skills from `/skills/` to your Claude Code skills directory:
+Copy the skills from `bronze-tier/skills/` to your Claude Code skills directory:
 
 ```bash
 # Default Claude Code skills location
@@ -223,7 +226,7 @@ To upgrade to Silver Tier:
 python --version
 
 # Install dependencies
-pip install -r watchers/requirements.txt
+pip install -r bronze-tier/watchers/requirements.txt
 ```
 
 ### Claude Code can't see vault files
