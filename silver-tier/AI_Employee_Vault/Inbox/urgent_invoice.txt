@@ -1,0 +1,9 @@
+FROM: client@company.com
+SUBJECT: URGENT - Invoice #12345 Payment Reminder
+
+Hello,
+
+This is an urgent reminder about invoice #12345 for $2,500.
+Payment was due yesterday. Please process immediately.
+
+Thank you.
