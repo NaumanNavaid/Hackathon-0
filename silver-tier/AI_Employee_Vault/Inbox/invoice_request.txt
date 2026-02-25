@@ -1,0 +1,8 @@
+FROM: client@example.com
+SUBJECT: Invoice Request
+
+Hi, please send me the invoice for January 2026 services.
+Amount should be $1500 as discussed.
+
+Thanks,
+Client A

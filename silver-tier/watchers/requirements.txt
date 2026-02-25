@@ -1,0 +1,24 @@
+# Silver Tier - Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# File system monitoring (from Bronze)
+watchdog>=6.0.0
+
+# Logging
+colorlog>=6.8.0
+
+# Utilities
+python-dateutil>=2.8.2
+pytz>=2023.3
+
+# Gmail API
+google-api-python-client>=2.100.0
+google-auth-oauthlib>=1.0.0
+google-auth-httplib2>=0.1.0
+
+# Playwright (for WhatsApp and LinkedIn)
+playwright>=1.40.0
+
+# Node.js packages (install separately with npm in mcp-servers/)
+# @modelcontextprotocol/sdk
+# googleapis
