@@ -267,7 +267,8 @@ def main():
         print("1. Go to: https://console.cloud.google.com/apis/credentials")
         print("2. Create OAuth 2.0 credentials")
         print("3. Download credentials.json")
-        print(f"4. Save to: {Path.home()/.gmail_credentials.json}")
+        creds_file = Path.home() / '.gmail_credentials.json'
+        print(f"4. Save to: {creds_file}")
         print("\nThen run: python gmail_watcher.py")
         return
 

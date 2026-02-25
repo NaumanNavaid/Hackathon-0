@@ -11,8 +11,8 @@ Your life and business on autopilot. Local-first, agent-driven, human-in-the-loo
 | Tier | Status | Time | Link |
 |------|--------|------|------|
 | **Bronze** | ✅ Complete | 8-12 hrs | [`bronze-tier/README.md`](bronze-tier/README.md) |
-| **Silver** | 🚧 Planned | 20-30 hrs | [`silver-tier/README.md`](silver-tier/README.md) |
-| **Gold** | 📋 Planned | 40+ hrs | [`gold-tier/README.md`](gold-tier/README.md) |
+| **Silver** | ✅ Complete | 20-30 hrs | [`silver-tier/README.md`](silver-tier/README.md) |
+| **Gold** | 🚧 In Progress | 40+ hrs | [`gold-tier/README.md`](gold-tier/README.md) |
 | **Platinum** | 📋 Planned | 60+ hrs | [`platinum-tier/README.md`](platinum-tier/README.md) |
 
 ---
