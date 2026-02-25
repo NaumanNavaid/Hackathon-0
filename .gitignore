@@ -1,1 +1,47 @@
+# Environment variables
 .env
+*.env
+
+# Credentials
+*gmail_credentials.json
+*gmail_token.json
+*whatsapp_session/
+*linkedin_session/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Node.js
+node_modules/
+package-lock.json
+
+# Obsidian
+.obsidian/plugins/
+.obsidian/workspace
+
+# Session files
+*.session
+*.session.json
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Test files
+AI_Employee_Vault/Inbox/*
+AI_Employee_Vault/Needs_Action/*
+!AI_Employee_Vault/Inbox/.gitkeep
+!AI_Employee_Vault/Needs_Action/.gitkeep
+
+# Logs
+*.log
